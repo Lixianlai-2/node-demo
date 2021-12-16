@@ -46,9 +46,7 @@ var server = http.createServer(function (request, response) {
   } else if (path === "/x") {
     response.statusCode = 200;
     response.setHeader("Content-Type", "text/css;charset=utf-8");
-    response.setHeader("Lixianlai", "good");
     response.write(`body{color:blue}\n`);
-    response.write(`*{margin:0;padding:0;box-sizing:border-box;}\n`);
     response.end();
   } else if (path === "/y") {
     response.statusCode = 200;
